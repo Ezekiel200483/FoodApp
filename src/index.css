@@ -242,7 +242,22 @@ h1 {
   padding: 1rem;
   width: 80%;
   max-width: 40rem;
-  animation: fade-slide-up 0.3s ease-out forwards;
+  animation: fade-slide-up 2s ease-out forwards;
+}
+
+
+@keyframes slide-up-fade-in {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+
+  }
 }
 
 .modal::backdrop {
@@ -270,6 +285,7 @@ h1 {
 .error p {
   margin: 0;
 }
+
 
 @keyframes fade-slide-up {
   from {

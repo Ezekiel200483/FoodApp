@@ -11,6 +11,8 @@
     "backend": "concurrently \"vite\" \"node backend/app.js\""
   },
   "dependencies": {
+    "dotenv": "^16.4.4",
+    "mongoose": "^8.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

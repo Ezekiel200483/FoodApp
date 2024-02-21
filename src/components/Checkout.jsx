@@ -1,11 +1,12 @@
 import Modal from "./UI/Modal"
 import { useContext } from "react"
-import CartContext from "../store/CartContex"
+import CartContext from "../store/CartContext"
 import { currencyFormatter } from "../util/formatting";
 import Input from "./UI/Input";
 import UserProgressContext from "../store/UserProgressContext";
 import Button from "./UI/Button";
 import useHttp from "../hooks/useHttp";
+import Error from "./UI/Error";
 
 
 const requestConfig = {

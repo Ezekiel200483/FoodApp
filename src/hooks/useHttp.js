@@ -24,10 +24,13 @@ export default function useHttp(url, config, initialData) {
   }
 
   const sendRequest = useCallback(
-    async function sendRequest(data) {
+    async function sendRequest(requestData) {
       setIsLoading(true);
       try {
-        const resData = await sendHttpRequest(url, { ...config, body: data });
+        const resData = await sendHttpRequest(url, {
+          ...config,
+          body: requestData,
+        });
         setData(resData);
       } catch (error) {
         setError(error.message || "Something went wrong!");
